@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About</title>
+	<link href="style.css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/368aa2eb6b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+<div id="about">
+	<div class="container">
+
+		<nav>
+			<img src="images/logo.png" class = "logo">
+			
+			<ul>
+
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about_page.html">About</a></li>
+				<li><a href="services_page.html">Services</a></li>
+				<li><a href="portfolio_page.html">Portfolio</a></li>
+				<li><a href="contact_page.html">Contact</a></li>
+				
+			</ul>
+
+		</nav>
+
+
+		<div class="row">
+
+
+			
+			<div class="about-col-1">
+				<img src="images/farid_picture.jpg">
+			</div> 
+
+			<div class="about-col-2">
+				<h1 class="sub-title"> About me</h1>
+				<p>Current data analytics professional with +4 years of experience in Data Analytics in general and Data Science, in particular, that is supported by extended knowledge of applied statistics and mathematics. I am experienced at applying the hottest machine and deep learning algorithms to a wide range of data using popular statistical and programming tools such as Python and R. Thanks to working in a multidisciplinary team, I have also developed an ability to communicate complex technical processes to non-technical people.
+
+				On top of that, I also share my analytical solutions on different social media platforms in the form of articles and videos.</p>
+
+				<div class="tab_titles">
+					
+					<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+					<p class="tab-links" onclick="opentab('experience')">Expericence</p>
+					<p class="tab-links" onclick="opentab('education')">Education</p>
+
+				</div>
+
+				<div class="tab-contents active-tab" id="skills">
+					<ul>
+						<li><span>Data analysis</span><br>and deriving insights</li>
+						<li><span>Data Science</span><br>using different tools</li>
+						<li><span>Research</span><br>in academia</li>
+
+
+					</ul>
+					
+
+				</div>
+
+				<div class="tab-contents" id="experience">
+					<ul>
+						<li><span>2021 - Current</span><br>Data analyst at ING</li>
+						<li><span>2017 - 2022 </span><br>Researcher at University of Antwerp</li>
+						<li><span>2012 Apr - 2012 Oct</span><br>Inter at Unibank</li>
+
+
+					</ul>
+					
+
+				</div>
+
+				<div class="tab-contents" id="education">
+					<ul>
+						<li><span>2022</span><br>PhD at University of Antwerp </li>
+						<li><span>2017</span><br>Master of Business Economics at University of Antwerp</li>
+						<li><span>2014</span><br>Bachelor of Economics at Baku State University</li>
+
+
+					</ul>
+					
+
+				</div>
+
+			</div> 
+		</div>
+	</div>
+	<div class="copyright copyright-about">
+		<p>Copyright <i class="fa-solid fa-copyright"></i>  Farid Mammadaliyev</p>
+		
+	</div>
+</div> 
+
+
+<!--------JavaScipt------>
+<script>
+
+	var tablinks = document.getElementsByClassName("tab-links")
+	var tabcontents = document.getElementsByClassName("tab-contents")
+	
+	function opentab(tabname){
+		for(tablink of tablinks){
+			tablink.classList.remove("active-link")
+		}
+
+		for(tabcontent of tabcontents){
+			tabcontent.classList.remove("active-tab")
+		}
+
+		event.currentTarget.classList.add("active-link")
+		document.getElementById(tabname).classList.add("active-tab");
+	}
+
+</script>
+
+</body>
+</html>
