@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale-1.0">
 	<title>About</title>
 	<link href="style.css" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/368aa2eb6b.js" crossorigin="anonymous"></script>
@@ -14,15 +15,18 @@
 		<nav>
 			<img src="images/logo.png" class = "logo">
 			
-			<ul>
+			<ul id="sidemenu">
 
 				<li><a href="index.html">Home</a></li>
 				<li><a href="about_page.html">About</a></li>
 				<li><a href="services_page.html">Services</a></li>
-				<li><a href="portfolio_page.html">Portfolio</a></li>
+				<li><a href="portfolio_page.html">Articles</a></li>
+				<li><a href="video_page.html">Videos</a></li>
 				<li><a href="contact_page.html">Contact</a></li>
+				<i class="fa-solid fa-xmark" onclick="closemenu()"></i> 
 				
 			</ul>
+			<i class="fa-solid fa-bars" onclick="openmenu()"></i>
 
 		</nav>
 
@@ -64,7 +68,7 @@
 				<div class="tab-contents" id="experience">
 					<ul>
 						<li><span>2021 - Current</span><br>Data analyst at ING</li>
-						<li><span>2017 - 2022 </span><br>Researcher at University of Antwerp</li>
+						<li><span>2017 - 2022 </span><br>Doctoral researcher at University of Antwerp</li>
 						<li><span>2012 Apr - 2012 Oct</span><br>Inter at Unibank</li>
 
 
@@ -75,9 +79,9 @@
 
 				<div class="tab-contents" id="education">
 					<ul>
-						<li><span>2022</span><br>PhD at University of Antwerp </li>
-						<li><span>2017</span><br>Master of Business Economics at University of Antwerp</li>
-						<li><span>2014</span><br>Bachelor of Economics at Baku State University</li>
+						<li><span>2017-2022</span><br>PhD at University of Antwerp </li>
+						<li><span>2015-2017</span><br>Master of Business Economics at University of Antwerp</li>
+						<li><span>2010-2014</span><br>Bachelor of Economics at Baku State University</li>
 
 
 					</ul>
@@ -113,6 +117,26 @@
 		event.currentTarget.classList.add("active-link")
 		document.getElementById(tabname).classList.add("active-tab");
 	}
+
+</script>
+
+
+<!------ side menu for a phone screen --->
+
+<script>
+
+	var sidemenu = document.getElementById("sidemenu");
+
+	function openmenu(){
+
+		sidemenu.style.right = "0"
+	}
+
+	function closemenu(){
+
+		sidemenu.style.right = "-200px"
+	}
+	
 
 </script>
 

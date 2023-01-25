@@ -2,8 +2,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale-1.0">
 	<title>Portfolio</title>
 	<link href="style.css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/368aa2eb6b.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -12,31 +14,48 @@
 
 <div id="portfolio">
 	<div class="container">
-		<h1 class="sub-title">My Articles</h1>
+		<nav class="nav-portfolio">
+			<img src="images/logo.png" class = "logo">
+			<ul id="sidemenu">
+
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about_page.html">About</a></li>
+				<li><a href="services_page.html">Services</a></li>
+				<li><a href="portfolio_page.html">Articles</a></li>
+				<li><a href="video_page.html">Videos</a></li>
+				<li><a href="contact_page.html">Contact</a></li>
+				<i class="fa-solid fa-xmark" onclick="closemenu()"></i> 
+				
+
+			</ul>
+			<i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+		</nav>
+		<h1 class="sub-title my-articles">My Articles</h1>
 		<div class="work-list">
 			<div class="work">
-				<img src="images/work_1.png">
+				<img src="images/work_7.png">
 				<div class="layer">
-					<h3>Real Estate price inflation</h3>
-					<p>Interactive map of real estate price inflation over time using Plotly</p>
-					<a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+					<h3>Real estate energy consumption</h3>
+					<p>Exploring the Sustainability of Belgian Properties: A Look into the Energy Labels of Major Cities</p>
+					<a href="https://medium.com/@farid.mammadaliyev/exploring-the-sustainability-of-belgian-properties-a-look-into-the-energy-labels-of-major-cities-8ccf255f8aef"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
 				</div>
 			</div>
 			<div class="work">
-				<img src="images/work_2.png">
+				<img src="images/work_6.png">
 				<div class="layer">
-					<h3>Inflation</h3>
-					<p>Inflation in Belgium in 2022</p>
-					<a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+					<h3>Real estate inflation</h3>
+					<p>Interactive map of real estate price inflation over time using Plotly</p>
+					<a href="https://medium.com/@farid.mammadaliyev/interactive-map-of-real-estate-price-inflation-over-time-using-plotly-b10ab8e91555"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
 				</div>
 			</div>
 
 			<div class="work">
-				<img src="images/work_3.png">
+				<img src="images/work_5.png">
 				<div class="layer">
-					<h3>Real Estate prices</h3>
-					<p>Visualize real estate prices of different neighborhoods using the Folium Choropleth map</p>
-					<a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+					<h3>CPI inflation</h3>
+					<p>Inflation in Belgium in 2022</p>
+					<a href="https://medium.com/@farid.mammadaliyev/inflation-in-belgium-in-2022-b7cac7772f84"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
 				</div>
 			</div>
 
@@ -45,44 +64,76 @@
 			<div class="work">
 				<img src="images/work_4.png">
 				<div class="layer">
-					<h3>Web Scraping</h3>
-					<p>Web scraping from a dynamic website using BeautifulSoup</p>
-					<a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+					<h3>Real estate prices</h3>
+					<p>Visualize real estate prices of different neighborhoods using the Folium Choropleth map</p>
+					<a href="https://medium.com/@farid.mammadaliyev/visualize-real-estate-prices-of-different-neighborhoods-using-the-folium-choropleth-map-1d95430c1cb2"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
 				</div>
 			</div>
 
 		
 			<div class="work">
-				<img src="images/work_4.png">
+				<img src="images/work_3.png">
 				<div class="layer">
-					<h3>Web Scraping w</h3>
-					<p>Web scraping from a dynamic website using BeautifulSoupww</p>
-					<a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+					<h3>Web Scraping</h3>
+					<p>Web scraping from a dynamic website using BeautifulSoup</p>
+					<a href="https://medium.com/@farid.mammadaliyev/web-scraping-from-a-dynamic-website-using-beautifulsoup-710fbb9fd6c6"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+				</div>
+			</div>
+
+			<div class="work">
+				<img src="images/work_2.png">
+				<div class="layer">
+					<h3>Data extraction from Foursquare</h3>
+					<p>Use Foursquare API to extract venue data</p>
+					<a href="https://medium.com/@farid.mammadaliyev/use-foursquare-api-to-extract-venue-data-6791c56b2a72"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
 				</div>
 			</div>
 
 			<div class="work">
 				<img src="images/work_1.png">
 				<div class="layer">
-					<h3>Web Scraping wss</h3>
-					<p>Web scraping from a dyssnamic website using BeautifulSoupww</p>
-					<a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+					<h3>Desktop App</h3>
+					<p>Write a Python app to calculate the energy consumption</p>
+					<a href="https://medium.com/@farid.mammadaliyev/write-a-python-app-to-calculate-the-energy-consumption-47ffa7f59f53"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
 				</div>
 			</div>
 
+			
+
 
 		</div>
-		<a href="#" class="btn">See more</a>
+	<!--	<a href="#" class="btn">See more</a> -->
 
 
 		
 
 
 	</div>
-	
+	<div class="copyright">
+		<p>Copyright <i class="fa-solid fa-copyright"></i>  Farid Mammadaliyev</p>
+		
+	</div>
 
 </div>
 
+<!------ side menu for a phone screen --->
+
+<script>
+
+	var sidemenu = document.getElementById("sidemenu");
+
+	function openmenu(){
+
+		sidemenu.style.right = "0"
+	}
+
+	function closemenu(){
+
+		sidemenu.style.right = "-200px"
+	}
+	
+
+</script>
 
 </body>
 </html>
