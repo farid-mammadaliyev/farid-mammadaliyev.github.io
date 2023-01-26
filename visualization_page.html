@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale-1.0">
+	<title>Visualization</title>
+	<link href="style.css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/368aa2eb6b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+
+
+<div id="portfolio">
+	<div class="container">
+		<nav class="nav-portfolio">
+			<img src="images/logo.png" class = "logo">
+			<ul id="sidemenu">
+
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about_page.html">About</a></li>
+				<li><a href="services_page.html">Services</a></li>
+				<li><a href="portfolio_page.html">Articles</a></li>
+				<li><a href="video_page.html">Videos</a></li>
+				<li><a href="visualization_page.html">Visualizations</a></li>
+				<li><a href="contact_page.html">Contact</a></li>
+				<i class="fa-solid fa-xmark" onclick="closemenu()"></i> 
+				
+
+			</ul>
+			<i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+		</nav>
+		<h1 class="sub-title my-articles">My Visualizations</h1>
+		<div class="work-list">
+
+
+
+			<div class="work">
+				<img src="images/visualization_images/map_5.png">
+				<div class="layer">
+					<h3>Energy Consumption of properties in Brussels per postcode</h3>
+				<!--	<p>Extracting venue data from Foursquare API in Python</p> -->
+					<a href="visualization/map_5_page.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+				</div>
+			</div>
+
+
+
+			<div class="work">
+				<img src="images/visualization_images/map_4.png">
+				<div class="layer">
+					<h3>Energy Consumption of properties in Antwerp per postcode</h3>
+				<!--	<p>Determining optimal K in K-Means Clustering using Elbow method</p> -->
+					<a href="visualization/map_4_page.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+				</div>
+			</div>
+
+		
+			<div class="work">
+				<img src="images/visualization_images/map_3.png">
+				<div class="layer">
+					<h3>Price inflation of apartments in Belgium between 2010 and 2022 </h3>
+				<!--	<p>Reading and plotting Geospatial data using a Haversine function</p>.   -->
+					<a href="visualization/map_3_page.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+				</div>
+			</div>
+
+			<div class="work">
+				<img src="images/visualization_images/map_2.png">
+				<div class="layer">
+					<h3>Price inflation of apartments in Belgium during 12 years </h3>
+				<!---	<p>Building a Negative Binomial model and testing it in Python</p> --->
+					<a href="visualization/map_2_page.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+				</div>
+			</div>
+
+			<div class="work">
+				<img src="images/visualization_images/map_1.png">
+				<div class="layer">
+					<h3>Properperty prices per square meter in Antwerp per postcode</h3>
+				<!--	<p>Building a bar chart and coloring a specific bar in Python matplotlib</p> --->
+					<a href="visualization/map_1_page.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+				</div>
+			</div>
+
+			
+
+
+		</div>
+	<!--	<a href="#" class="btn">See more</a> -->
+
+
+		
+
+
+	</div>
+
+<!---
+	<div class="copyright">
+		<p>Copyright <i class="fa-solid fa-copyright"></i>  Farid Mammadaliyev</p>
+		
+	</div>
+--->
+
+</div>
+
+<script>
+
+	var sidemenu = document.getElementById("sidemenu");
+
+	function openmenu(){
+
+		sidemenu.style.right = "0"
+	}
+
+	function closemenu(){
+
+		sidemenu.style.right = "-200px"
+	}
+	
+
+</script>
+
+</body>
+</html>
