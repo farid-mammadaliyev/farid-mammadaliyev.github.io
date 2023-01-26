@@ -222,7 +222,7 @@ nav ul li a:hover::after{
 }
 
 .tab-contents ul li span{
-	color: #b54769;
+	color: #ff004f;
 	font-size: 14px;
 }
 
@@ -275,6 +275,13 @@ nav ul li a:hover::after{
 	font-size: 30px;
 	font-weight: 500;
 	margin-bottom: 15px;
+}
+
+.services-list div p{
+	font-size: 15px;
+	font-weight: 500;
+	margin-bottom: 15px;
+	text-align: justify;
 }
 
 .services-list div a{
