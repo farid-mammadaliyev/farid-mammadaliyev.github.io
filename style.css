@@ -655,11 +655,11 @@ nav .fa-solid{
    	 	color: #fff;
     	padding: 10px;
     	padding-bottom: 20px;
-    	font-weight: 400;
+    	font-weight: 400; 
     	font-size: 16px;
     /*	position: fixed; */
     	bottom: 0;
-    	margin-left: -45px;
+    /*	margin-left: -45px; */
 
 	}
 

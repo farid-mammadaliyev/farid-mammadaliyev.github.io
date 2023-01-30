@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale-1.0">
+	<title>Services</title>
+	<link rel="shortcut icon" type="../image/png" href="../images/favicon.png">
+	<link href="../style.css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/368aa2eb6b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+<div id="services">
+	<div class="container">
+
+		<nav>
+			<img src="../images/logo.png" class = "logo">
+			<ul id="sidemenu">
+
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="../about/index.html">About</a></li>
+				<li><a href="../services/index.html">Services</a></li>
+				<li><a href="../articles/index.html">Articles</a></li>
+				<li><a href="../videos/index.html">Videos</a></li>
+				<li><a href="../visualizations/index.html">Visualizations</a></li>
+				<li><a href="../contact/index.html">Contact</a></li>
+				<i class="fa-solid fa-xmark" onclick="closemenu()"></i> 				
+
+			</ul>
+			<i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+		</nav>
+
+		<h1 class="sub-title sub-my-services">My Services</h1>
+		<div class='services-list'>
+			<div>
+				<i class="fa-solid fa-magnifying-glass-chart fa-4x"></i>
+				<h2>Data Analysis</h2>
+				<p>I offer assistance in expertly extracting valuable insights from data, utilizing my data science skillset and analytical prowess.</p>
+			<!--	<a href="#">Learn more</a> -->
+			</div>
+
+			<div>
+				<i class="fa-solid fa-building fa-4x"></i>
+				<h2>Consultancy</h2>
+				<p>I offer assistance in identifying the ideal property to purchase or invest in, drawing upon my extensive knowledge of the Belgian real estate market.</p>
+			<!--	<a href="#">Learn more</a>  -->
+			</div>
+
+			<div>
+				<i class="fa-sharp fa-solid fa-globe fa-4x"></i>
+				<h2>Web scraping</h2>
+				<p>I offer assistance in gathering data from various sources through the use of web scraping techniques.</p>
+		<!---		<a href="#">Learn more</a> -->
+			</div>
+
+		</div>
+
+	</div>
+
+<!---
+
+	<div class="copyright">
+		<p>Copyright <i class="fa-solid fa-copyright"></i>  Farid Mammadaliyev</p>
+		
+	</div>
+-->
+
+</div>
+
+
+<!------ side menu for a phone screen --->
+
+<script>
+
+	var sidemenu = document.getElementById("sidemenu");
+
+	function openmenu(){
+
+		sidemenu.style.right = "0"
+	}
+
+	function closemenu(){
+
+		sidemenu.style.right = "-200px"
+	}
+	
+
+</script>
+
+</body>
+</html>
