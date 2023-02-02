@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale-1.0">
+	<title>Contact</title>
+	<link rel="shortcut icon" type="image/png" href="../images/favicon.png">
+	<link href="../style.css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/368aa2eb6b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+<div id="contact">
+	<div class="container">
+
+		<nav>
+			<img src="../images/logo.png" class = "logo">
+			<ul id="sidemenu">
+
+				<li><a href="../">Home</a></li>
+				<li><a href="../about/">About</a></li>
+				<li><a href="../services/">Services</a></li>
+				<li><a href="../articles/">Articles</a></li>
+				<li><a href="../videos/">Videos</a></li>
+				<li><a href="../visualizations/">Visualizations</a></li>
+				<li><a href="../contact/">Contact</a></li>
+				<i class="fa-solid fa-xmark" onclick="closemenu()"></i> 
+
+				
+			</ul>
+			<i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+		</nav>
+
+		<div class="row-contact">
+			<div class="contact-left">
+				<h1 class="sub-title contact-me-sub">Contact me</h1> <!---Chat Gpt gave the code-->
+				<p><i class="fas fa-paper-plane"></i>ferid.mammadaliyev@gmail.com</p>
+				<p><i class="fas fa-phone-square-alt"></i>+32465815293</p>
+				<div class="social-icons">
+					<a href="https://www.linkedin.com/in/farid-mammadaliyev-phd/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+					<a href="https://www.youtube.com/@farid.mammadaliyev" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+					<a href="https://medium.com/@farid.mammadaliyev" target="_blank"><i class="fa-brands fa-medium"></i></a>
+					<a href="https://stackoverflow.com/users/10507476/farid-mammadaliyev" target="_blank"><i class="fa-brands fa-stack-overflow"></i></a>
+					<a href="https://github.com/farid-mammadaliyev" target="_blank"><i class="fa-brands fa-github"></i></a>
+					<a href="https://www.instagram.com/faridinno/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+				</div>
+
+				<a href="Farid_CV_2023.pdf" target="_blank" download="" class="btn btn2">Download CV</a>
+			</div>
+			<div class="contact-right">
+				<form name="submit-to-google-sheet">
+					<input type="text" name="Name" placeholder="Your Name" required>
+					<input type="email" name="Email" placeholder="Your Email" required>
+					<textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+					<button type="submit" class="btn btn2">Submit</button>
+				</form>
+				<span id="msg"></span>
+			</div>
+		</div>
+	</div>
+
+<!---
+	<div class="copyright">
+		<p>Copyright <i class="fa-solid fa-copyright"></i>  Farid Mammadaliyev</p>
+		
+	</div>
+
+--->
+
+
+</div>
+
+<script>
+
+	var sidemenu = document.getElementById("sidemenu");
+
+	function openmenu(){
+
+		sidemenu.style.right = "0"
+	}
+
+	function closemenu(){
+
+		sidemenu.style.right = "-200px"
+	}
+	
+
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzdDKaIBkRUQZXXLnHsyCK9A3CYVnJwsT7-lC_C75zoeX3Wg1Q0vV5NjsoOpdhbzjRVFQ/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+      	msg.innerHTML = "Message was sent succesfully"
+      	setTimeout(function(){
+      		msg.innerHTML = ""
+      	}, 5000)
+      	form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+
+
+
+</body>
+</html>

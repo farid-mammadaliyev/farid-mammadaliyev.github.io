@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale-1.0">
+	<title>About</title>
+	<link rel="shortcut icon" type="image/png" href="../images/favicon.png">
+	<link href="../style.css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/368aa2eb6b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+<div id="about">
+	<div class="container">
+
+		<nav>
+			<img src="../images/logo.png" class = "logo">
+			
+			<ul id="sidemenu">
+
+				<li><a href="../">Home</a></li>
+				<li><a href="../about/">About</a></li>
+				<li><a href="../services/">Services</a></li>
+				<li><a href="../articles/">Articles</a></li>
+				<li><a href="../videos/">Videos</a></li>
+				<li><a href="../visualizations/">Visualizations</a></li>
+				<li><a href="../contact/">Contact</a></li>
+				<i class="fa-solid fa-xmark" onclick="closemenu()"></i> 
+				
+			</ul>
+			<i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+		</nav>
+
+
+		<div class="row">
+
+
+			
+			<div class="about-col-1">
+				<img src="../images/farid_picture.jpg">
+			</div> 
+
+			<div class="about-col-2">
+				<h1 class="sub-title"> About me</h1>
+				<p>With over 4 years of experience in data analytics and data science, I am a seasoned professional with a strong background in applied statistics and mathematics. I excel in using cutting-edge machine and deep learning algorithms to analyze a wide range of data utilizing tools such as Python, SQL, and R. My experience working in multidisciplinary teams has also developed my ability to effectively communicate technical processes to non-technical stakeholders. In addition to my professional experience, I am a dedicated contributor to the data analytics community, regularly sharing my analytical solutions and insights through articles on Medium and videos on YouTube.
+
+				</p>
+
+				<div class="tab_titles">
+					
+					<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+					<p class="tab-links" onclick="opentab('experience')">Experience</p>
+					<p class="tab-links" onclick="opentab('education')">Education</p>
+
+				</div>
+
+				<div class="tab-contents active-tab" id="skills">
+					<ul>
+						<li><span>Computer Skills</span><br>Python, PySpark, R, Git, SQL, Tableau, SAS</li>
+						<li><span>Data Science Skills</span><br>Data Collection & Processing, Model building, Web Scraping, Data Visualization</li>
+						<li><span>Soft Skills</span><br>Academic Research, Experience Working with Non-technical Teams, Adaptability</li>
+
+
+					</ul>
+					
+
+				</div>
+
+				<div class="tab-contents" id="experience">
+					<ul>
+						<li><span>2021 - Current</span><br>Data Analyst at ING, Belgium</li>
+						<li><span>2017 - 2022 </span><br>Doctoral Researcher at University of Antwerp, Belgium</li>
+						<li><span>2012 Apr - 2012 Oct</span><br>Financial Risk Management Intern at Unibank, Azerbaijan</li>
+
+
+					</ul>
+					
+
+				</div>
+
+				<div class="tab-contents" id="education">
+					<ul>
+						<li><span>2017-2022</span><br>PhD at University of Antwerp </li>
+						<li><span>2015-2017</span><br>Master of Business Economics at University of Antwerp</li>
+						<li><span>2010-2014</span><br>Bachelor of Economics at Baku State University</li>
+
+
+					</ul>
+					
+
+				</div>
+
+			</div> 
+		</div>
+	</div>
+
+<!---
+	<div class="copyright copyright-about">
+		<p>Copyright <i class="fa-solid fa-copyright"></i>  Farid Mammadaliyev</p>
+		
+	</div>
+
+--->
+</div> 
+
+
+<!--------JavaScipt------>
+<script>
+
+	var tablinks = document.getElementsByClassName("tab-links")
+	var tabcontents = document.getElementsByClassName("tab-contents")
+	
+	function opentab(tabname){
+		for(tablink of tablinks){
+			tablink.classList.remove("active-link")
+		}
+
+		for(tabcontent of tabcontents){
+			tabcontent.classList.remove("active-tab")
+		}
+
+		event.currentTarget.classList.add("active-link")
+		document.getElementById(tabname).classList.add("active-tab");
+	}
+
+</script>
+
+
+<!------ side menu for a phone screen --->
+
+<script>
+
+	var sidemenu = document.getElementById("sidemenu");
+
+	function openmenu(){
+
+		sidemenu.style.right = "0"
+	}
+
+	function closemenu(){
+
+		sidemenu.style.right = "-200px"
+	}
+	
+
+</script>
+
+</body>
+</html>

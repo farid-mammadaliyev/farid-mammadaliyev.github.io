@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale-1.0">
+	<title>Videos</title>
+	<link rel="shortcut icon" type="image/png" href="../images/favicon.png">
+	<link href="../style.css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/368aa2eb6b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+
+
+<div id="portfolio">
+	<div class="container">
+		<nav class="nav-portfolio">
+			<img src="../images/logo.png" class = "logo">
+			<ul id="sidemenu">
+
+				<li><a href="../">Home</a></li>
+				<li><a href="../about/">About</a></li>
+				<li><a href="../services/">Services</a></li>
+				<li><a href="../articles/">Articles</a></li>
+				<li><a href="../videos/">Videos</a></li>
+				<li><a href="../visualizations/">Visualizations</a></li>
+				<li><a href="../contact/">Contact</a></li>
+				<i class="fa-solid fa-xmark" onclick="closemenu()"></i> 
+				
+
+			</ul>
+			<i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+		</nav>
+		<h1 class="sub-title my-articles">My Videos</h1>
+		<div class="work-list">
+			<div class="work">
+				<img src="../images/video_images/video_7.png">
+				<div class="layer">
+					<h3>Model building</h3>
+					<p>Building and Evaluating a predictive model using Keras</p>
+					<a href="https://www.youtube.com/watch?v=RvFt9JN1-VM&ab_channel=FaridMammadaliyev" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+				</div>
+			</div>
+			<div class="work">
+				<img src="../images/video_images/video_6.png">
+				<div class="layer">
+					<h3>Model statistics</h3>
+					<p>Extracting regression details from the StatsModels result table using a "for loop"</p>
+					<a href="https://www.youtube.com/watch?v=u6ZDnSuoRH0&t=95s&ab_channel=FaridMammadaliyev" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+				</div>
+			</div>
+
+			<div class="work">
+				<img src="../images/video_images/video_5.png">
+				<div class="layer">
+					<h3>Data extracting</h3>
+					<p>Extracting venue data from Foursquare API in Python</p>
+					<a href="https://www.youtube.com/watch?v=AyCGOaOAYkA&t=91s&ab_channel=FaridMammadaliyev" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+				</div>
+			</div>
+
+
+
+			<div class="work">
+				<img src="../images/video_images/video_4.png">
+				<div class="layer">
+					<h3>Data clustering</h3>
+					<p>Determining optimal K in K-Means Clustering using Elbow method</p>
+					<a href="https://www.youtube.com/watch?v=0h4yhFtoXOU&ab_channel=FaridMammadaliyev" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+				</div>
+			</div>
+
+		
+			<div class="work">
+				<img src="../images/video_images/video_3.png">
+				<div class="layer">
+					<h3>Map visualization</h3>
+					<p>Reading and plotting Geospatial data using a Haversine function</p>
+					<a href="https://www.youtube.com/watch?v=iCnTzkhf-YI&t=385s&ab_channel=FaridMammadaliyev" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+				</div>
+			</div>
+
+			<div class="work">
+				<img src="../images/video_images/video_2.png">
+				<div class="layer">
+					<h3>Model building</h3>
+					<p>Building a Negative Binomial model and testing it in Python</p>
+					<a href="https://www.youtube.com/watch?v=PzXb7dpgPFk&ab_channel=FaridMammadaliyev" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+				</div>
+			</div>
+
+			<div class="work">
+				<img src="../images/video_images/video_1.png">
+				<div class="layer">
+					<h3>Data visualization</h3>
+					<p>Building a bar chart and coloring a specific bar in Python matplotlib</p>
+					<a href="https://www.youtube.com/watch?v=QmRDKPNrTmA&ab_channel=FaridMammadaliyev" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+				</div>
+			</div>
+
+			
+
+
+		</div>
+	<!--	<a href="#" class="btn">See more</a> -->
+
+
+		
+
+
+	</div>
+
+<!---
+	<div class="copyright">
+		<p>Copyright <i class="fa-solid fa-copyright"></i>  Farid Mammadaliyev</p>
+		
+	</div>
+--->
+
+</div>
+
+<script>
+
+	var sidemenu = document.getElementById("sidemenu");
+
+	function openmenu(){
+
+		sidemenu.style.right = "0"
+	}
+
+	function closemenu(){
+
+		sidemenu.style.right = "-200px"
+	}
+	
+
+</script>
+
+</body>
+</html>
