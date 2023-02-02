@@ -1,0 +1,91 @@
+
+
+root directory -------------index.html
+					|			|
+					|			|
+					|			|
+					|-------about-------index.html
+					|		    |
+					|		    |
+					|		    |
+					|-------services----index.html
+					|		    |
+					|		    |
+					|		    |
+					|-------articles----index.html
+					|		    |
+					|		    |
+					|		    |
+					|-------videos------index.html
+					|		    |
+					|		    |
+					|		    |
+					|-------visualization---------------index.html
+					|			|					  |
+					|			|					  |----style_map.css
+					|			|					  |
+					|-------contact-----index.html    |----map_1----index.html
+					|			|					  |			  |	
+					|			|				      |			  |--map_1.html
+					|			|				      |
+					|-------style.css			      |----map_2----index.html
+					|			|				      |			  |
+					|			|				      |			  |--map_2.html
+					|			|				      |
+					|-------images				      |----map_3----index.html
+								|				      |			  |
+								|				      |			  |--map_3.html
+								|				      |		
+								|				      |----map_4----index.html
+								|				      |			  |
+								|				      |			  |--map_4.html
+								|				      |
+								|				      |----map_5----index.html
+								|							      |
+								|							      |--map_5.html
+								|
+								|
+								|---------------video_images-----video_1
+								|						|
+								|						|--------video_2
+								|						.
+								|						.
+								|
+								|---------------visualization_images-----map_1
+								|						|
+								|						|----------------map_2
+								|						.
+								|						.
+								|
+								|---------------work_1
+								|
+								|
+								|---------------work_2
+								.
+								.
+								.
+								|
+								|
+								|---------------background.png
+								|
+								|
+								|---------------faric_picture.jpeg
+								|
+								|
+								|---------------favicon.png
+								|
+								|
+								|---------------logo.png
+								|
+								|
+								|---------------logo_link.docx
+								|
+								|
+								|---------------mobile_background_image.jpg
+								|
+								|
+								|---------------social_media_tag.png
+
+
+
+
