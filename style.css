@@ -24,7 +24,7 @@ body{
 #header::before {
   content: "";
   background-image: url(images/background.png);
-  background-size: 100%;
+  background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   opacity: 0.2;
@@ -556,7 +556,7 @@ nav .fa-solid{
 	#header::before {
  		content: "";
  		background-image: url(images/background.png);
-  		background-size: 310%;
+  		background-size: cover;
   		background-position: 50% 50%;
   		background-repeat: no-repeat;
   		opacity: 0.2;
